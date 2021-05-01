@@ -6,6 +6,26 @@ type ListNode struct {
 	Next *ListNode
 }
 
+// Helper struct for testing
+type List struct {
+	head *ListNode
+	len  int
+}
+
+// Helper func to create list for testing
+func NewList() *List {
+	return &List{}
+}
+
+// Helper func to push values to list for testing
+func (l *List) push(val int) {
+	n := &ListNode{
+		Val:  val,
+		Next: l.head,
+	}
+	l.head = n
+}
+
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	sum := l1.Val + l2.Val
 	nextCase := determineHasNext(l1.Next, l2.Next)
