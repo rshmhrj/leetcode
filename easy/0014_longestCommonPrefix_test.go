@@ -47,7 +47,3 @@ func Test_longestCommonPrefix(t *testing.T) {
 		})
 	}
 }
-
-//fmt.Printf("flower,flow: %v\n", longestCommonPrefix([]string{"flower","flow"})) // "fl"
-//fmt.Printf("flower,flow,flight: %v\n", longestCommonPrefix([]string{"flower","flow","flight"})) // "fl"
-//fmt.Printf("dog,racecar,car: %v\n", longestCommonPrefix([]string{"dog","racecar","car"})) // ""
